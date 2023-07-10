@@ -1,6 +1,7 @@
+import 'package:bookly_app/views/widgets/custom_bestbooklistview.dart';
 import 'package:flutter/material.dart';
+import 'bestseller_listview.dart';
 import 'custom_appbar.dart';
-import 'custom_bestbooklistview.dart';
 import 'customtext.dart';
 import 'feuturedlistview.dart';
 
@@ -21,6 +22,8 @@ class HomeViewBody extends StatelessWidget {
          SizedBox(height: 25,),
          CustomText(text: 'Best Seller',),
          CustomBestBookListView(),
+        //  BestSellerListView(),
+
 
     
     
