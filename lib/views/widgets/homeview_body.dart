@@ -10,7 +10,10 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const   Padding(
+    return const CustomScrollView(
+      slivers: [
+        SliverToBoxAdapter(
+       child: Padding(
       padding: EdgeInsets.all(8.0),
       child:   Column(
     crossAxisAlignment: CrossAxisAlignment.start,
@@ -21,19 +24,23 @@ class HomeViewBody extends StatelessWidget {
          FeauturedBooksListView(),
          SizedBox(height: 25,),
          CustomText(text: 'Best Seller',),
-         CustomBestBookListView(),
+        //  CustomBestBookListView(),
         //  BestSellerListView(),
-
-
-    
-    
-        
          
          ],
     
       ),
+    )
+
+        ),
+        SliverToBoxAdapter(
+          child:   BestSellerListView(),
+        ),
+        
+
+      ],
     );
-  }
 
 
+}
 }
