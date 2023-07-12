@@ -1,4 +1,3 @@
-import 'package:bookly_app/views/widgets/custom_bestbooklistview.dart';
 import 'package:flutter/material.dart';
 import 'bestseller_listview.dart';
 import 'custom_appbar.dart';
@@ -24,8 +23,6 @@ class HomeViewBody extends StatelessWidget {
          FeauturedBooksListView(),
          SizedBox(height: 25,),
          CustomText(text: 'Best Seller',),
-        //  CustomBestBookListView(),
-        //  BestSellerListView(),
          
          ],
     
@@ -33,7 +30,7 @@ class HomeViewBody extends StatelessWidget {
     )
 
         ),
-        SliverToBoxAdapter(
+        SliverFillRemaining(
           child:   BestSellerListView(),
         ),
         

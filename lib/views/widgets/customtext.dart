@@ -8,7 +8,7 @@ final String text;
   Widget build(BuildContext context) {
     return   Text( text,style:const  TextStyle(
        color: Colors.white,
-       fontSize: 28,
+       fontSize: 25,
        fontWeight: FontWeight.w600,
        fontFamily: 'Oswald'),
        );
