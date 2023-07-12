@@ -1,4 +1,6 @@
+import 'package:bookly_app/features/presentation/views/search_view.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
@@ -12,7 +14,9 @@ class CustomAppBar extends StatelessWidget {
            
           const Image(image: AssetImage('images/Logo.png'),),
           const Spacer(),
-          IconButton(onPressed: (){}, icon: const Icon( Icons.search),color: Colors.white,),
+          IconButton(onPressed: (){
+            Get.to(SearchView());
+          }, icon: const Icon( Icons.search),color: Colors.white,),
        
           ],
                ),

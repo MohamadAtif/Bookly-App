@@ -13,9 +13,10 @@ class BooklyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return   GetMaterialApp(
-      theme: ThemeData.light().copyWith(textTheme: GoogleFonts.montserratTextTheme()),
+      theme: ThemeData.dark().copyWith(
+      textTheme: GoogleFonts.montserratTextTheme()),
       debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      home: const HomeView(),
     );
     
   }
