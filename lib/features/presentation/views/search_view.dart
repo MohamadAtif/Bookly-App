@@ -11,8 +11,6 @@ class SearchView extends StatelessWidget {
     return const Scaffold(
       backgroundColor: kPrimaryColor,
       body: SafeArea(child: SearchViewBody()),
-
-
     );
   }
 }

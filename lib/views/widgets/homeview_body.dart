@@ -12,32 +12,29 @@ class HomeViewBody extends StatelessWidget {
     return const CustomScrollView(
       slivers: [
         SliverToBoxAdapter(
-       child: Padding(
-      padding: EdgeInsets.all(8.0),
-      child:   Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-      
-         children:  [ 
-         SizedBox(height: 27,),
-         CustomAppBar(),
-         FeauturedBooksListView(),
-         SizedBox(height: 25,),
-         CustomText(text: 'Best Seller',),
-         
-         ],
-    
-      ),
-    )
-
-        ),
+            child: Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                height: 27,
+              ),
+              CustomAppBar(),
+              FeauturedBooksListView(),
+              SizedBox(
+                height: 25,
+              ),
+              CustomText(
+                text: 'Best Seller',
+              ),
+            ],
+          ),
+        )),
         SliverFillRemaining(
-          child:   BestSellerListView(),
+          child: BestSellerListView(),
         ),
-        
-
       ],
     );
-
-
-}
+  }
 }

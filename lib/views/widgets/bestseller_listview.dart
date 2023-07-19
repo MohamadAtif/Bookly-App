@@ -6,11 +6,10 @@ class BestSellerListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return ListView.builder(
-   
       physics: const NeverScrollableScrollPhysics(),
       itemCount: 10,
-      itemBuilder: (context, index) =>const CustomBestBookListView(),);
+      itemBuilder: (context, index) => const CustomBestBookListView(),
+    );
   }
 }

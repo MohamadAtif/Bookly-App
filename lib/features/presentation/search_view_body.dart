@@ -10,18 +10,18 @@ class SearchViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScrollView(
-      slivers: [
-        SliverFillRemaining(
-          child:  Padding(
-        padding:  EdgeInsets.all(20.0),
-        child: Column(
-         children: [
-          CustomSearchTextField(),
-          SizedBox(height: 30,),
-          Expanded(child: SearchREsultListView())])) ,
-        )
-      ]);         // 
-     
+    return const CustomScrollView(slivers: [
+      SliverFillRemaining(
+        child: Padding(
+            padding: EdgeInsets.all(20.0),
+            child: Column(children: [
+              CustomSearchTextField(),
+              SizedBox(
+                height: 30,
+              ),
+              Expanded(child: SearchREsultListView())
+            ])),
+      )
+    ]); //
   }
 }

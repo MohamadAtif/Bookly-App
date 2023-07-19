@@ -9,6 +9,7 @@ class SearchREsultListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: 10,
-      itemBuilder: (context, index) =>const CustomBestBookListView(),);
+      itemBuilder: (context, index) => const CustomBestBookListView(),
+    );
   }
 }

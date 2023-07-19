@@ -7,10 +7,10 @@ class BookDetailsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const  Padding(
-      padding:  EdgeInsets.symmetric(horizontal: 20),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: Scaffold(
-        backgroundColor:kPrimaryColor,
+        backgroundColor: kPrimaryColor,
         body: BookDetailsBody(),
       ),
     );

@@ -11,13 +11,15 @@ class CustomSearchTextField extends StatelessWidget {
       height: 60,
       child: TextField(
         decoration: InputDecoration(
-         border: OutlineInputBorder(borderRadius :BorderRadius.circular(16),
-         borderSide:const BorderSide(color: Colors.white) ),
-        
+          border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(16),
+              borderSide: const BorderSide(color: Colors.white)),
           hintText: 'Search',
-          suffixIcon: const  Icon( Icons.search,color: Colors.white,),
+          suffixIcon: const Icon(
+            Icons.search,
+            color: Colors.white,
           ),
-      
+        ),
       ),
     );
   }
